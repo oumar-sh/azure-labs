@@ -7,11 +7,6 @@ Param (
     [string] $resourceGroupName
 )
 
-#Set parameters
-#$vmName = 'odaWindows2019'
-#$snapshotName = 'snapshot-disk-odaWindows2019'
-#$resourceGroupName = 'rg-oda-vm-backup'
-
 #Get the VM object
 Write-Host "Retrieving the virtual machine object ..."
 $vm = Get-AzVM -Name $vmName -ResourceGroupName $resourceGroupName
