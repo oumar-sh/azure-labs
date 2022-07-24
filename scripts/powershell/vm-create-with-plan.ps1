@@ -9,11 +9,6 @@ Param (
     [string] $resourceGroupName
 )
 
-$vmName = "SGLOBA-I0005"
-$osDiskName = 'SGLOBA-I0005-OsDisk'
-$nicName = 'vnicSGLOBA-I0005'
-$resourceGroupName = 'RG_GROUPBASTION_PPD'
-
 # Get the OsDisk object
 Write-Host "Retrieving the OS Disk ..."
 $osDisk = Get-AzDisk -ResourceGroupName $resourceGroupName -DiskName $osDiskName
